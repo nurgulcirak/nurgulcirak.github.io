@@ -545,10 +545,11 @@ hr {
   transform: rotate(-12deg);
 }
 .intro-sticker {
-  position: absolute;
-  top:152px;
-  left:680px;
-  width:75px;
+ position: absolute;
+  top: 152px;
+  left: 680px;
+  width: 75px;
+}
 .yildiz-yagmur {
   position: fixed;
   top: 0;
@@ -559,7 +560,6 @@ hr {
   overflow: hidden;
   z-index: 999;
 }
-}
 footer {
   text-align: center;
   padding: 25px 0;
@@ -567,4 +567,111 @@ footer {
   color: #6b6b6b;
   margin-top: 50px;
   letter-spacing: 1px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 12px;
+  }
+
+  .top-nav {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .top-nav a {
+    font-size: 13px;
+  }
+
+  .hosgeldin {
+    max-width: 100%;
+    padding: 12px 20px;
+    border-radius: 40px;
+    margin-top: 80px;
+  }
+
+  .hosgeldin h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .intro-sticker {
+    position: static;
+    display: block;
+    margin: 90px auto 10px auto;
+    width: 60px;
+  }
+
+  .profil-wrapper {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .cicek {
+    width: 36px;
+  }
+
+  .profil-foto {
+    width: 140px;
+    height: 140px;
+  }
+
+  .İçerik,
+  .İçerik2,
+  .İçerik3,
+  .su-an-kutusu,
+  .tavsiye-bolumu {
+    width: 100%;
+    max-width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .cizim-ben {
+    width: 180px;
+    height: auto;
+  }
+
+  .avatar-sticker {
+    width: 65px;
+    left: 0;
+    top: -15px;
+  }
+
+  .loading-box {
+    width: calc(100% - 40px);
+    padding: 24px 18px;
+    box-sizing: border-box;
+  }
+
+  .loading-box h1 {
+    font-size: 24px;
+  }
+
+  .loading-text,
+  .loading-small {
+    font-size: 14px;
+  }
+
+  #cay {
+    width: 110px;
+  }
+
+  .tiklanabilir {
+    font-size: 24px;
+  }
+
+  footer {
+    padding: 20px 12px;
+  }
 }
